@@ -137,7 +137,7 @@ export class Clang extends Linter {
                 fileName: (inFileArray[1] === this.tmpFileName ? this.actualFileName : inFileArray[1]),
                 line: parseInt(inFileArray[2]) - 1,
                 column: 0,
-                severity: DiagnosticSeverity.Warning,
+                severity: DiagnosticSeverity.Hint,
                 code: 0,
                 message: 'Issues in file included from here',
                 source: this.name
